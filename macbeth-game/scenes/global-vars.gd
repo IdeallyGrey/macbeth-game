@@ -11,5 +11,6 @@ var game_script = PackedStringArray([
 	"Statue",
 	"Still statue",
 	"!002",
-	"Blank"
+	"Blank again",
+	"The end"
 ])
