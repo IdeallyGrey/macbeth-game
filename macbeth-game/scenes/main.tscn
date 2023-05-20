@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://jlx3pean3jew"]
 
 [ext_resource type="FontFile" uid="uid://dw04i0djrsc01" path="res://fonts/IBMPlexSans-Light.ttf" id="1_hhw5l"]
-[ext_resource type="Texture2D" uid="uid://dgjgqd5y4yvl8" path="res://assets/white-panel.png" id="1_ns6gx"]
+[ext_resource type="Texture2D" uid="uid://dgjgqd5y4yvl8" path="res://assets/white.png" id="1_louqr"]
 
 [sub_resource type="Theme" id="Theme_j3l5j"]
 default_font = ExtResource("1_hhw5l")
@@ -9,11 +9,11 @@ default_font_size = 30
 
 [node name="Main" type="Node2D"]
 
-[node name="White-panel" type="Sprite2D" parent="."]
+[node name="White" type="Sprite2D" parent="."]
 modulate = Color(0, 0, 0, 1)
 position = Vector2(512, 384)
 scale = Vector2(32, 24)
-texture = ExtResource("1_ns6gx")
+texture = ExtResource("1_louqr")
 metadata/_edit_lock_ = true
 
 [node name="Panel" type="Panel" parent="."]
