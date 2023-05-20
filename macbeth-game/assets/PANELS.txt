@@ -1,0 +1,8 @@
+Format: File number, name of artwork, source, license, link
+
+001, Saint Catherine of Alexandria, The Met, public domain, https://www.metmuseum.org/art/collection/search/463001
+002, Hans Ardüser, e-codices (University of Fribourg), CC BY-NC 4.0, https://www.e-codices.unifr.ch/en/list/one/ssg/0024
+003, Die drei Hexen, Wikimedia Commons, public domain, https://commons.wikimedia.org/wiki/File:Johann_Heinrich_F%C3%BCssli_019.jpg
+004, --, Bibliothèque municipale de Boulogne-sur-Mer, public domain, https://manuscriptminiatures.com/4437/11052
+005, WLB Cod.bibl.fol.23 Stuttgart Psalter, Württembergische Landesbibliothek, public domain, https://manuscriptminiatures.com/4868/13174
+006, UBH Cod. Pal. germ. 848 Codex Manesse, Heidelberg University Library, public domain, https://manuscriptminiatures.com/4832/7926
