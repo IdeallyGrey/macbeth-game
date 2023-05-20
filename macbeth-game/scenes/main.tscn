@@ -1,13 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://jlx3pean3jew"]
+[gd_scene load_steps=7 format=3 uid="uid://jlx3pean3jew"]
 
+[ext_resource type="Script" path="res://scenes/main.gd" id="1_5emg3"]
 [ext_resource type="FontFile" uid="uid://dw04i0djrsc01" path="res://fonts/IBMPlexSans-Light.ttf" id="1_hhw5l"]
 [ext_resource type="Texture2D" uid="uid://dgjgqd5y4yvl8" path="res://assets/white.png" id="1_louqr"]
+[ext_resource type="Texture2D" uid="uid://mmyrn0hqvusa" path="res://assets/001.jpg" id="3_mri7c"]
+[ext_resource type="PackedScene" uid="uid://b0he73cpgklpf" path="res://scenes/image.tscn" id="4_y7hmb"]
 
 [sub_resource type="Theme" id="Theme_j3l5j"]
 default_font = ExtResource("1_hhw5l")
-default_font_size = 30
+default_font_size = 24
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_5emg3")
 
 [node name="White" type="Sprite2D" parent="."]
 modulate = Color(0, 0, 0, 1)
@@ -16,16 +20,16 @@ scale = Vector2(32, 24)
 texture = ExtResource("1_louqr")
 metadata/_edit_lock_ = true
 
-[node name="Panel" type="Panel" parent="."]
+[node name="Text Panel" type="Panel" parent="."]
 offset_left = 64.0
-offset_top = 416.0
+offset_top = 512.0
 offset_right = 960.0
-offset_bottom = 704.0
+offset_bottom = 736.0
 theme = SubResource("Theme_j3l5j")
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Panel"]
+[node name="RichTextLabel" type="RichTextLabel" parent="Text Panel"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -40,3 +44,9 @@ text = "Place holder text
 Macbeth! Macbeth!"
 scroll_following = true
 shortcut_keys_enabled = false
+
+[node name="Image 001" parent="." instance=ExtResource("4_y7hmb")]
+visible = false
+scale = Vector2(0.373, 0.373)
+texture = ExtResource("3_mri7c")
+metadata/panel_id = 1
