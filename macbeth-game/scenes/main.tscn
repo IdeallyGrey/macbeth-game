@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://jlx3pean3jew"]
+[gd_scene load_steps=8 format=3 uid="uid://jlx3pean3jew"]
 
 [ext_resource type="Script" path="res://scenes/main.gd" id="1_5emg3"]
 [ext_resource type="FontFile" uid="uid://dw04i0djrsc01" path="res://fonts/IBMPlexSans-Light.ttf" id="1_hhw5l"]
 [ext_resource type="Texture2D" uid="uid://dgjgqd5y4yvl8" path="res://assets/white.png" id="1_louqr"]
 [ext_resource type="Texture2D" uid="uid://mmyrn0hqvusa" path="res://assets/001.jpg" id="3_mri7c"]
+[ext_resource type="Script" path="res://scenes/text-box.gd" id="4_pg0kl"]
 [ext_resource type="PackedScene" uid="uid://b0he73cpgklpf" path="res://scenes/image.tscn" id="4_y7hmb"]
 
 [sub_resource type="Theme" id="Theme_j3l5j"]
@@ -29,7 +30,7 @@ theme = SubResource("Theme_j3l5j")
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Text Panel"]
+[node name="Text Box" type="RichTextLabel" parent="Text Panel"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -39,14 +40,12 @@ offset_right = -8.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_default_cursor_shape = 9
-text = "Place holder text
-
-Macbeth! Macbeth!"
 scroll_following = true
 shortcut_keys_enabled = false
+script = ExtResource("4_pg0kl")
 
 [node name="Image 001" parent="." instance=ExtResource("4_y7hmb")]
 visible = false
 scale = Vector2(0.373, 0.373)
 texture = ExtResource("3_mri7c")
-metadata/panel_id = 1
+metadata/image_id = 1

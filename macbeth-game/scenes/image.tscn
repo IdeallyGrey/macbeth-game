@@ -5,4 +5,4 @@
 [node name="Image" type="Sprite2D"]
 position = Vector2(512, 256)
 script = ExtResource("1_d5kv2")
-metadata/panel_id = 0
+metadata/image_id = 0
