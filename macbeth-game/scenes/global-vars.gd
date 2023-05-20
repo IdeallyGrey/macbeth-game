@@ -7,7 +7,7 @@ var on_screen_text = ""
 # The script. Strings beginning with "!" will be skipped and instead change current image.
 var game_script = PackedStringArray([
 	"Blank",
-	"!001",
+	"!002",
 	"Statue",
 	"Still statue",
 	"!002",

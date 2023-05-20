@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://cl0m7aa832k4n"]
+
+[ext_resource type="Script" path="res://scenes/start-menu.gd" id="1_a1fun"]
+[ext_resource type="Texture2D" uid="uid://dgjgqd5y4yvl8" path="res://assets/white.png" id="2_jkgua"]
+[ext_resource type="Theme" uid="uid://bocuu4euolw8c" path="res://fonts/theme.tres" id="3_r5did"]
+[ext_resource type="Texture2D" uid="uid://dewx6hs5pal3o" path="res://assets/menu.png" id="4_pjts5"]
+
+[node name="Start Menu" type="Node2D"]
+script = ExtResource("1_a1fun")
+
+[node name="Background" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(512, 384)
+scale = Vector2(32, 24)
+texture = ExtResource("2_jkgua")
+metadata/_edit_lock_ = true
+
+[node name="Macbeth Text" type="RichTextLabel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 64.0
+offset_top = 48.0
+offset_right = 704.0
+offset_bottom = 176.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 9
+theme = ExtResource("3_r5did")
+theme_override_colors/default_color = Color(0.4, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 105
+text = "Macbeth"
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Menu" type="Sprite2D" parent="."]
+position = Vector2(755, 627)
+scale = Vector2(1.48, 1.48)
+texture = ExtResource("4_pjts5")

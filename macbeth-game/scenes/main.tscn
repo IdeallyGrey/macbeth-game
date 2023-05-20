@@ -1,20 +1,16 @@
-[gd_scene load_steps=8 format=3 uid="uid://jlx3pean3jew"]
+[gd_scene load_steps=7 format=3 uid="uid://jlx3pean3jew"]
 
 [ext_resource type="Script" path="res://scenes/main.gd" id="1_5emg3"]
-[ext_resource type="FontFile" uid="uid://dw04i0djrsc01" path="res://fonts/IBMPlexSans-Light.ttf" id="1_hhw5l"]
 [ext_resource type="Texture2D" uid="uid://dgjgqd5y4yvl8" path="res://assets/white.png" id="1_louqr"]
+[ext_resource type="Theme" uid="uid://bocuu4euolw8c" path="res://fonts/theme.tres" id="3_hxbkw"]
 [ext_resource type="Texture2D" uid="uid://mmyrn0hqvusa" path="res://assets/001.jpg" id="3_mri7c"]
 [ext_resource type="Script" path="res://scenes/text-box.gd" id="4_pg0kl"]
 [ext_resource type="PackedScene" uid="uid://b0he73cpgklpf" path="res://scenes/image.tscn" id="4_y7hmb"]
 
-[sub_resource type="Theme" id="Theme_j3l5j"]
-default_font = ExtResource("1_hhw5l")
-default_font_size = 24
-
 [node name="Main" type="Node2D"]
 script = ExtResource("1_5emg3")
 
-[node name="White" type="Sprite2D" parent="."]
+[node name="Background" type="Sprite2D" parent="."]
 modulate = Color(0, 0, 0, 1)
 position = Vector2(512, 384)
 scale = Vector2(32, 24)
@@ -26,7 +22,7 @@ offset_left = 64.0
 offset_top = 512.0
 offset_right = 960.0
 offset_bottom = 736.0
-theme = SubResource("Theme_j3l5j")
+theme = ExtResource("3_hxbkw")
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
 
