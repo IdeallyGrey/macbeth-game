@@ -44,7 +44,6 @@ offset_left = 8.0
 offset_right = -8.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_default_cursor_shape = 9
 scroll_following = true
 shortcut_keys_enabled = false
 visible_characters = 0
@@ -108,6 +107,7 @@ texture = ExtResource("7_f5g3e")
 metadata/image_id = 1
 metadata/_edit_lock_ = true
 
+[connection signal="visibility_changed" from="Question Panel" to="." method="_on_question_panel_visibility_changed"]
 [connection signal="visibility_changed" from="Question Panel" to="Question Panel/Question Box" method="_on_question_panel_visibility_changed"]
 [connection signal="pressed" from="Question Panel/Button A" to="Question Panel" method="_on_button_a_pressed"]
 [connection signal="pressed" from="Question Panel/Button B" to="Question Panel" method="_on_button_b_pressed"]

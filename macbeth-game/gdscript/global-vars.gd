@@ -3,8 +3,8 @@ extends Node
 var current_line = -1
 var current_image = 0
 var on_screen_text = ""
-var current_question = -1
-var answer = ""
+var current_question = null
+var answer = null
 var currently_typing = false
 
 # The script. Strings beginning with "!" will be skipped and instead change current image.

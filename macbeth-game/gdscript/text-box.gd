@@ -8,7 +8,7 @@ func _process(_delta):
 		visible_characters = 0
 		text = GV.on_screen_text
 
-#		GV.currently_typing = true		REMEMBER TO UNCOMMENT THIS LINE
+#		GV.currently_typing = true		REMEMBER TO UNCOMMENT THIS LINE BEFORE SHIPPING
 
 		# Show one more character at a time until full text shown
 		while visible_ratio < 1:

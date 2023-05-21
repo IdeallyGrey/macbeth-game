@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://28x40bgcrbb2"]
+
+[ext_resource type="Texture2D" uid="uid://dgjgqd5y4yvl8" path="res://assets/white.png" id="1_yhy5r"]
+[ext_resource type="FontFile" uid="uid://6c7cbri0b5gg" path="res://fonts/Cinzel-Medium.ttf" id="2_vnrd0"]
+
+[node name="End Menu" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(512, 384)
+scale = Vector2(32, 24)
+texture = ExtResource("1_yhy5r")
+metadata/_edit_lock_ = true
+
+[node name="Macbeth Text" type="RichTextLabel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 792.0
+offset_top = 632.0
+offset_right = 1032.0
+offset_bottom = 784.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("2_vnrd0")
+theme_override_font_sizes/normal_font_size = 121
+text = "fin."
+scroll_active = false
+shortcut_keys_enabled = false
