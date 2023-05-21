@@ -1,7 +1,5 @@
 extends Node2D
 
-
-
 func interpret_current_line():
 		# Checks if question
 		if GV.game_script[GV.current_line + 1].begins_with("?"):
