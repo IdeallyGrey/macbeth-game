@@ -3,8 +3,11 @@ extends Node2D
 
 
 func interpret_current_line():
+		# Checks if question
+		if GV.game_script[GV.current_line + 1].begins_with("?"):
+			pass
 		# If next line begins with "!", move to that line, set image to int. following the "!"
-		if GV.game_script[GV.current_line + 1].begins_with("!"):
+		elif GV.game_script[GV.current_line + 1].begins_with("!"):
 			GV.current_line += 1
 			GV.current_image = GV.game_script[GV.current_line].to_int()
 		# Move to next line, set on-screen text to the line
