@@ -7,7 +7,9 @@ func _process(_delta):
 		# Reset visible characters and set text
 		visible_characters = 0
 		text = GV.on_screen_text
+
 #		GV.currently_typing = true		REMEMBER TO UNCOMMENT THIS LINE
+
 		# Show one more character at a time until full text shown
 		while visible_ratio < 1:
 			visible_characters += 1
