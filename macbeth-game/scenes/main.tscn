@@ -38,6 +38,8 @@ grow_vertical = 2
 mouse_default_cursor_shape = 9
 scroll_following = true
 shortcut_keys_enabled = false
+visible_characters = 0
+visible_ratio = 0.0
 script = ExtResource("4_pg0kl")
 
 [node name="Image 001" parent="." instance=ExtResource("4_y7hmb")]
