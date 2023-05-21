@@ -9,9 +9,9 @@
 [ext_resource type="PackedScene" uid="uid://b0he73cpgklpf" path="res://scenes/image.tscn" id="4_y7hmb"]
 [ext_resource type="Theme" uid="uid://befxc6rqg2lvo" path="res://fonts/question-theme.tres" id="6_nxfmp"]
 [ext_resource type="Texture2D" uid="uid://j3csmargaix6" path="res://assets/005.jpg" id="7_f5g3e"]
+[ext_resource type="Script" path="res://gdscript/question-panel.gd" id="7_jjds3"]
 [ext_resource type="Script" path="res://gdscript/question-box.gd" id="7_pq87s"]
 [ext_resource type="Texture2D" uid="uid://ch6hunv17ag0d" path="res://assets/confirm-g.png" id="9_jhl6r"]
-[ext_resource type="Script" path="res://scenes/question-panel.gd" id="9_uh6w7"]
 [ext_resource type="Texture2D" uid="uid://b7j34heldhk73" path="res://assets/confirm-r.png" id="10_xfjm6"]
 
 [node name="Main" type="Node2D"]
@@ -58,7 +58,7 @@ offset_top = 64.0
 offset_right = 960.0
 offset_bottom = 704.0
 theme = ExtResource("6_nxfmp")
-script = ExtResource("9_uh6w7")
+script = ExtResource("7_jjds3")
 metadata/_edit_lock_ = true
 metadata/_edit_group_ = true
 
