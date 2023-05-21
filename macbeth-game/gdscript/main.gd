@@ -6,7 +6,6 @@ func interpret_current_line():
 			GV.current_line += 1
 			GV.question = GV.game_script[GV.current_line]
 			GV.question[0] = "" # Replaces char at index 0 (the "?") with ""
-			#return
 		# If next line begins with "!", move to that line, set image to int. following the "!"
 		elif GV.game_script[GV.current_line + 1].begins_with("!"):
 			GV.current_line += 1
@@ -24,13 +23,15 @@ func _ready():
 
 # On every frame
 func _process(_delta):
-	# If space/left mouse is pressed and text is not currently being loaded
-	if Input.is_action_just_pressed("ui_continue") and not GV.currently_typing:
+	# If space/left mouse is pressed, text is not currently being loaded, and its not in question mode
+	if Input.is_action_just_pressed("ui_continue") and not GV.currently_typing and GV.question == "":
 		# Check if there are more lines
 		if GV.current_line + 1 < GV.game_script.size():
 			interpret_current_line()
 		else:
 			game_over()
+	elif Input.is_action_just_pressed("ui_continue") and not GV.question == "":
+		pass
 
 
 

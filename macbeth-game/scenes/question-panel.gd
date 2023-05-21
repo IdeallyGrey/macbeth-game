@@ -1,7 +1,5 @@
 extends Panel
 
-
-
 func _ready():
 	set_visible(false)
 
@@ -11,3 +9,11 @@ func _process(_delta):
 		GV.current_image = -1
 	else:
 		set_visible(false)
+
+
+func _on_button_a_pressed():
+	GV.question = ""
+
+
+func _on_button_b_pressed():
+	GV.question = ""

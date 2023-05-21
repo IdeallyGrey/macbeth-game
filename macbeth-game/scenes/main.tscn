@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://jlx3pean3jew"]
+[gd_scene load_steps=14 format=3 uid="uid://jlx3pean3jew"]
 
 [ext_resource type="Script" path="res://gdscript/main.gd" id="1_173j8"]
 [ext_resource type="Texture2D" uid="uid://dgjgqd5y4yvl8" path="res://assets/white.png" id="1_louqr"]
@@ -10,7 +10,9 @@
 [ext_resource type="Theme" uid="uid://befxc6rqg2lvo" path="res://fonts/question-theme.tres" id="6_nxfmp"]
 [ext_resource type="Texture2D" uid="uid://j3csmargaix6" path="res://assets/005.jpg" id="7_f5g3e"]
 [ext_resource type="Script" path="res://gdscript/question-box.gd" id="7_pq87s"]
+[ext_resource type="Texture2D" uid="uid://ch6hunv17ag0d" path="res://assets/confirm-g.png" id="9_jhl6r"]
 [ext_resource type="Script" path="res://scenes/question-panel.gd" id="9_uh6w7"]
+[ext_resource type="Texture2D" uid="uid://b7j34heldhk73" path="res://assets/confirm-r.png" id="10_xfjm6"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_173j8")
@@ -23,6 +25,7 @@ texture = ExtResource("1_louqr")
 metadata/_edit_lock_ = true
 
 [node name="Text Panel" type="Panel" parent="."]
+visible = false
 offset_left = 64.0
 offset_top = 512.0
 offset_right = 960.0
@@ -56,8 +59,8 @@ offset_right = 960.0
 offset_bottom = 704.0
 theme = ExtResource("6_nxfmp")
 script = ExtResource("9_uh6w7")
-metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
 
 [node name="Question Box" type="RichTextLabel" parent="Question Panel"]
 layout_mode = 0
@@ -67,6 +70,28 @@ offset_right = 832.0
 offset_bottom = 256.0
 text = "Do you heed the prophesy of the witches? Or do you choose to keep these thoughts out of your mind?"
 script = ExtResource("7_pq87s")
+metadata/_edit_lock_ = true
+
+[node name="Button A" type="Button" parent="Question Panel"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 352.0
+offset_right = 320.0
+offset_bottom = 544.0
+text = "A"
+icon = ExtResource("9_jhl6r")
+icon_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="Button B" type="Button" parent="Question Panel"]
+layout_mode = 0
+offset_left = 576.0
+offset_top = 352.0
+offset_right = 768.0
+offset_bottom = 544.0
+text = "B"
+icon = ExtResource("10_xfjm6")
+icon_alignment = 1
 metadata/_edit_lock_ = true
 
 [node name="Image 002" parent="." instance=ExtResource("4_y7hmb")]
@@ -84,3 +109,5 @@ metadata/image_id = 1
 metadata/_edit_lock_ = true
 
 [connection signal="visibility_changed" from="Question Panel" to="Question Panel/Question Box" method="_on_question_panel_visibility_changed"]
+[connection signal="pressed" from="Question Panel/Button A" to="Question Panel" method="_on_button_a_pressed"]
+[connection signal="pressed" from="Question Panel/Button B" to="Question Panel" method="_on_button_b_pressed"]
