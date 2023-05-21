@@ -1,13 +1,15 @@
-[gd_scene load_steps=10 format=3 uid="uid://jlx3pean3jew"]
+[gd_scene load_steps=12 format=3 uid="uid://jlx3pean3jew"]
 
 [ext_resource type="Script" path="res://gdscript/main.gd" id="1_173j8"]
 [ext_resource type="Texture2D" uid="uid://dgjgqd5y4yvl8" path="res://assets/white.png" id="1_louqr"]
-[ext_resource type="Theme" uid="uid://bocuu4euolw8c" path="res://fonts/theme.tres" id="3_hxbkw"]
+[ext_resource type="Theme" uid="uid://bocuu4euolw8c" path="res://fonts/primary-theme.tres" id="3_juibh"]
 [ext_resource type="Texture2D" uid="uid://mmyrn0hqvusa" path="res://assets/001.jpg" id="3_mri7c"]
 [ext_resource type="Script" path="res://gdscript/text-box.gd" id="4_4io0m"]
 [ext_resource type="Script" path="res://gdscript/text-panel.gd" id="4_6schy"]
 [ext_resource type="PackedScene" uid="uid://b0he73cpgklpf" path="res://scenes/image.tscn" id="4_y7hmb"]
+[ext_resource type="Theme" uid="uid://befxc6rqg2lvo" path="res://fonts/question-theme.tres" id="6_nxfmp"]
 [ext_resource type="Texture2D" uid="uid://j3csmargaix6" path="res://assets/005.jpg" id="7_f5g3e"]
+[ext_resource type="Script" path="res://gdscript/question-box.gd" id="7_pq87s"]
 [ext_resource type="Script" path="res://scenes/question-panel.gd" id="9_uh6w7"]
 
 [node name="Main" type="Node2D"]
@@ -21,12 +23,11 @@ texture = ExtResource("1_louqr")
 metadata/_edit_lock_ = true
 
 [node name="Text Panel" type="Panel" parent="."]
-visible = false
 offset_left = 64.0
 offset_top = 512.0
 offset_right = 960.0
 offset_bottom = 736.0
-theme = ExtResource("3_hxbkw")
+theme = ExtResource("3_juibh")
 script = ExtResource("4_6schy")
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
@@ -46,14 +47,17 @@ shortcut_keys_enabled = false
 visible_characters = 0
 visible_ratio = 0.0
 script = ExtResource("4_4io0m")
+metadata/_edit_lock_ = true
 
 [node name="Question Panel" type="Panel" parent="."]
 offset_left = 64.0
 offset_top = 64.0
 offset_right = 960.0
 offset_bottom = 704.0
+theme = ExtResource("6_nxfmp")
 script = ExtResource("9_uh6w7")
 metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
 
 [node name="Question Box" type="RichTextLabel" parent="Question Panel"]
 layout_mode = 0
@@ -61,6 +65,9 @@ offset_left = 64.0
 offset_top = 64.0
 offset_right = 832.0
 offset_bottom = 256.0
+text = "Do you heed the prophesy of the witches? Or do you choose to keep these thoughts out of your mind?"
+script = ExtResource("7_pq87s")
+metadata/_edit_lock_ = true
 
 [node name="Image 002" parent="." instance=ExtResource("4_y7hmb")]
 visible = false
@@ -75,3 +82,5 @@ scale = Vector2(0.448, 0.448)
 texture = ExtResource("7_f5g3e")
 metadata/image_id = 1
 metadata/_edit_lock_ = true
+
+[connection signal="visibility_changed" from="Question Panel" to="Question Panel/Question Box" method="_on_question_panel_visibility_changed"]

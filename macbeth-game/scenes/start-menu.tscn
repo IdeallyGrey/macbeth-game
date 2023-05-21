@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://gdscript/start-menu.gd" id="1_236ep"]
 [ext_resource type="Texture2D" uid="uid://dgjgqd5y4yvl8" path="res://assets/white.png" id="2_jkgua"]
-[ext_resource type="Theme" uid="uid://bocuu4euolw8c" path="res://fonts/theme.tres" id="3_r5did"]
+[ext_resource type="Theme" uid="uid://bocuu4euolw8c" path="res://fonts/primary-theme.tres" id="3_r5did"]
 [ext_resource type="Texture2D" uid="uid://dewx6hs5pal3o" path="res://assets/menu.png" id="4_pjts5"]
 
 [node name="Start Menu" type="Node2D"]
