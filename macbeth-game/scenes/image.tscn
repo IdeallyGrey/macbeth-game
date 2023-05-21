@@ -1,8 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://b0he73cpgklpf"]
 
-[ext_resource type="Script" path="res://scenes/image.gd" id="1_d5kv2"]
+[ext_resource type="Script" path="res://gdscript/image.gd" id="1_q3t5o"]
 
 [node name="Image" type="Sprite2D"]
 position = Vector2(512, 256)
-script = ExtResource("1_d5kv2")
+script = ExtResource("1_q3t5o")
 metadata/image_id = 0
