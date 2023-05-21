@@ -1,4 +1,4 @@
-Format: File number, name of artwork, source, license, link
+Format: File name, name of artwork, source, license, link
 
 001, Saint Catherine of Alexandria, The Met, public domain, https://www.metmuseum.org/art/collection/search/463001
 002, Hans Ardüser, e-codices (University of Fribourg), CC BY-NC 4.0, https://www.e-codices.unifr.ch/en/list/one/ssg/0024

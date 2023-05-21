@@ -1,9 +1,12 @@
 extends Node2D
 
 func interpret_current_line():
-		# Checks if question
+		# If next line begins with "?": set current_question, run question func, 'break' from func
 		if GV.game_script[GV.current_line + 1].begins_with("?"):
-			pass
+			GV.current_line += 1
+			GV.question = GV.game_script[GV.current_line]
+			GV.question[0] = "" # Replaces char at index 0 (the "?") with ""
+			#return
 		# If next line begins with "!", move to that line, set image to int. following the "!"
 		elif GV.game_script[GV.current_line + 1].begins_with("!"):
 			GV.current_line += 1
