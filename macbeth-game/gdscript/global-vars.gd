@@ -20,7 +20,7 @@ var game_script = PackedStringArray([
 	"The end",
 	"lol nope",
 	"?2",
-	"nein",
+	"EVen though you were given so many chances to turn back; to confess your sins; to stop the bloodshed; in the end, you still chose violence.",
 
 ])
 
