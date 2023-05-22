@@ -1,11 +1,20 @@
 [gd_resource type="Theme" load_steps=3 format=3 uid="uid://befxc6rqg2lvo"]
 
-[ext_resource type="FontFile" uid="uid://dw04i0djrsc01" path="res://fonts/IBMPlexSans-Light.ttf" id="1_7ova0"]
+[ext_resource type="FontFile" uid="uid://cr5vps1irjycr" path="res://fonts/IMFellDoublePica-Regular.ttf" id="1_k3asl"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_05rvi"]
 bg_color = Color(0.121569, 0.0627451, 0.0588235, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 
 [resource]
-RichTextLabel/font_sizes/normal_font_size = 40
-RichTextLabel/fonts/normal_font = ExtResource("1_7ova0")
+RichTextLabel/font_sizes/normal_font_size = 27
+RichTextLabel/fonts/normal_font = ExtResource("1_k3asl")
 RichTextLabel/styles/normal = SubResource("StyleBoxFlat_05rvi")

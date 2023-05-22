@@ -51,7 +51,6 @@ script = ExtResource("4_4io0m")
 metadata/_edit_lock_ = true
 
 [node name="Question Panel" type="Panel" parent="."]
-visible = false
 offset_left = 64.0
 offset_top = 64.0
 offset_right = 960.0
@@ -59,39 +58,35 @@ offset_bottom = 704.0
 theme = ExtResource("6_nxfmp")
 script = ExtResource("7_jjds3")
 metadata/_edit_lock_ = true
-metadata/_edit_group_ = true
 
 [node name="Question Box" type="RichTextLabel" parent="Question Panel"]
 layout_mode = 0
 offset_left = 64.0
 offset_top = 64.0
 offset_right = 832.0
-offset_bottom = 256.0
+offset_bottom = 320.0
 text = "Do you heed the prophesy of the witches? Or do you choose to keep these thoughts out of your mind?"
 script = ExtResource("7_pq87s")
-metadata/_edit_lock_ = true
 
 [node name="Button A" type="Button" parent="Question Panel"]
 layout_mode = 0
 offset_left = 128.0
-offset_top = 352.0
+offset_top = 384.0
 offset_right = 320.0
-offset_bottom = 544.0
+offset_bottom = 576.0
 text = "A"
 icon = ExtResource("9_jhl6r")
 icon_alignment = 1
-metadata/_edit_lock_ = true
 
 [node name="Button B" type="Button" parent="Question Panel"]
 layout_mode = 0
 offset_left = 576.0
-offset_top = 352.0
+offset_top = 384.0
 offset_right = 768.0
-offset_bottom = 544.0
+offset_bottom = 576.0
 text = "B"
 icon = ExtResource("10_xfjm6")
 icon_alignment = 1
-metadata/_edit_lock_ = true
 
 [node name="Image 002" parent="." instance=ExtResource("4_y7hmb")]
 visible = false

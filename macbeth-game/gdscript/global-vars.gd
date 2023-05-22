@@ -11,13 +11,13 @@ var currently_typing = false
 var game_script = PackedStringArray([
 	"Hello, the wethergregergegerwrg",
 	"The quick brown fox jumped over the sleeping dog.",
-	"!002",
+	"!001",
 	"Statue",
 	"Still statue",
-	"!001",
+	"!002",
 	"Not any more!",
 	"Question time!",
-	"?3",
+	"?0",
 	"Stayed on track I see",
 	"Now, next question!",
 	"?2",
@@ -26,7 +26,10 @@ var game_script = PackedStringArray([
 ])
 
 var questions = PackedStringArray([
-	"Question 1",
+	"Do you heed the prophesy of the witches? Or do you choose to keep these thoughts out of your mind?
+
+A. I will ignore these servants of the supernatural.
+B. King... you say?",
 	"Question 2",
 	"Question 3",
 	"Question 4",
