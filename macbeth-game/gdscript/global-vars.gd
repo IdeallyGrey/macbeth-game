@@ -9,16 +9,16 @@ var currently_typing = false
 
 # The script. Strings beginning with "!" will be skipped and instead change current image.
 var game_script = PackedStringArray([
-	"The quick brown fox jumped over the sleeping dog. Shakespeare was not fat. At least I don't think so. He was maybe bald. Lol. Imagine being bald.",
-	"!001",
+	"The quick brown fox jumped over the sleeping dog.",
+	"!002",
 	"Statue",
 	"Still statue",
-	"!002",
-	"question time!",
+	"!001",
+	"Not any more!",
+	"Question time!",
 	"?0",
-	"stayed on track I see",
-	"The end",
-	"lol nope",
+	"Stayed on track I see",
+	"Now, next question!",
 	"?2",
 	"Even though you were given so many chances to turn back; to confess your sins; to stop the bloodshed; in the end, you still chose violence.",
 

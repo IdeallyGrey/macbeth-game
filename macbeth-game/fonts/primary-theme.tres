@@ -1,7 +1,7 @@
 [gd_resource type="Theme" load_steps=2 format=3 uid="uid://bocuu4euolw8c"]
 
-[ext_resource type="FontFile" uid="uid://dw04i0djrsc01" path="res://fonts/IBMPlexSans-Light.ttf" id="1_owo8q"]
+[ext_resource type="FontFile" uid="uid://cr5vps1irjycr" path="res://fonts/IMFellDoublePica-Regular.ttf" id="1_0aagb"]
 
 [resource]
-default_font = ExtResource("1_owo8q")
+default_font = ExtResource("1_0aagb")
 default_font_size = 24

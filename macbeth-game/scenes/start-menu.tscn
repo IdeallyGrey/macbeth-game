@@ -50,6 +50,6 @@ scroll_active = false
 shortcut_keys_enabled = false
 
 [node name="UI design is my passion" type="Sprite2D" parent="."]
-position = Vector2(1453, 1126)
+position = Vector2(1352, 1000)
 scale = Vector2(1.48, 1.48)
 texture = ExtResource("4_pjts5")

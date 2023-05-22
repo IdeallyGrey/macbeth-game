@@ -13,6 +13,7 @@ config_version=5
 config/name="macbeth-game"
 run/main_scene="res://scenes/start-menu.tscn"
 config/features=PackedStringArray("4.0", "GL Compatibility")
+boot_splash/image="res://assets/confirm-r.png"
 
 [autoload]
 
