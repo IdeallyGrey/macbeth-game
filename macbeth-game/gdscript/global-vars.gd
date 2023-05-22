@@ -17,7 +17,7 @@ var game_script = PackedStringArray([
 	"!001",
 	"Not any more!",
 	"Question time!",
-	"?0",
+	"?3",
 	"Stayed on track I see",
 	"Now, next question!",
 	"?2",
