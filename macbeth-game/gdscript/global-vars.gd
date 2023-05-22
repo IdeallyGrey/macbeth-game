@@ -9,6 +9,7 @@ var currently_typing = false
 
 # The script. Strings beginning with "!" will be skipped and instead change current image.
 var game_script = PackedStringArray([
+	"Hello, the wethergregergegerwrg",
 	"The quick brown fox jumped over the sleeping dog.",
 	"!002",
 	"Statue",
