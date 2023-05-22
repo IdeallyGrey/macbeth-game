@@ -13,7 +13,6 @@ config_version=5
 config/name="macbeth-game"
 run/main_scene="res://scenes/start-menu.tscn"
 config/features=PackedStringArray("4.0", "GL Compatibility")
-config/icon="res://icon.svg"
 
 [autoload]
 

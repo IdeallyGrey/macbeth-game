@@ -1,16 +1,16 @@
 extends Node2D
 
-func interpret_current_line():
-		# If next line begins with "?": set current_question, run question func
-		if GV.game_script[GV.current_line + 1].begins_with("?"):
-			GV.current_line += 1
-			GV.current_question = GV.game_script[GV.current_line].to_int()
-		# If next line begins with "!", move to that line, set image to int. following the "!"
-		elif GV.game_script[GV.current_line + 1].begins_with("!"):
-			GV.current_line += 1
-			GV.current_image = GV.game_script[GV.current_line].to_int()
-		# Move to next line, set on-screen text to the line
+func interpret_line():
 		GV.current_line += 1
+		# If line begins with "?": set current_question, run question func
+		if GV.game_script[GV.current_line].begins_with("?"):
+			GV.current_question = GV.game_script[GV.current_line].to_int()
+			GV.current_line += 1
+		# If line begins with "!", move to that line, set image to int. following the "!"
+		elif GV.game_script[GV.current_line].begins_with("!"):
+			GV.current_image = GV.game_script[GV.current_line].to_int()
+			GV.current_line += 1
+		# Set on-screen text to the line
 		GV.on_screen_text = GV.game_script[GV.current_line]
 
 func game_over():
@@ -18,7 +18,7 @@ func game_over():
 
 # Runs once when first loaded, so that game doesn't open to blank screen/text
 func _ready():
-	interpret_current_line()
+	interpret_line()
 
 # On every frame
 func _process(_delta):
@@ -26,13 +26,11 @@ func _process(_delta):
 	if Input.is_action_just_pressed("ui_continue") and not GV.currently_typing and GV.current_question == null:
 		# Check if there are more lines
 		if GV.current_line + 1 < GV.game_script.size():
-			interpret_current_line()
+			interpret_line()
 		else:
 			game_over()
 
-# Runs when question panel changed
+# When question panel changed, if answer is A, or is B and no more lines after
 func _on_question_panel_visibility_changed():
-	if GV.answer == "a":
-		pass
-	elif GV.answer == "b" and GV.current_line + 1 == GV.game_script.size():
-		pass
+	if GV.answer == "a" or (GV.answer == "b" and GV.current_line == GV.game_script.size()):
+		game_over()

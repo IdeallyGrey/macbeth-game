@@ -15,9 +15,13 @@ var game_script = PackedStringArray([
 	"Still statue",
 	"!002",
 	"question time!",
-	"?What is a cow?",
+	"?0",
 	"stayed on track I see",
-	"The end"
+	"The end",
+	"lol nope",
+	"?2",
+	"nein",
+
 ])
 
 var questions = PackedStringArray([
@@ -28,10 +32,11 @@ var questions = PackedStringArray([
 	"Question 5"
 ])
 
-var alternate_endings = PackedStringArray([
+var endings = PackedStringArray([
 	"Ending 1",
 	"Ending 2",
 	"Ending 3",
 	"Ending 4",
 	"Ending 5",
+	"Ending 6"
 ])
