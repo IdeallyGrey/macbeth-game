@@ -11,7 +11,6 @@ func _process(_delta):
 		set_visible(false)
 
 func _on_button_a_pressed():
-#	GV.current_question = null
 	set_visible(false)
 	GV.answer = "a"
 

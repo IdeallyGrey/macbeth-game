@@ -13,5 +13,5 @@ func _process(_delta):
 		# Show one more character at a time until full text shown
 		while visible_ratio < 1:
 			visible_characters += 1
-			await get_tree().create_timer(0.005).timeout
+			await get_tree().create_timer(0.025).timeout
 		GV.currently_typing = false

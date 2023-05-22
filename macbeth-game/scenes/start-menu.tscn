@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://cl0m7aa832k4n"]
+[gd_scene load_steps=6 format=3 uid="uid://cl0m7aa832k4n"]
 
 [ext_resource type="Script" path="res://gdscript/start-menu.gd" id="1_236ep"]
 [ext_resource type="Texture2D" uid="uid://dgjgqd5y4yvl8" path="res://assets/white.png" id="2_jkgua"]
 [ext_resource type="FontFile" uid="uid://6c7cbri0b5gg" path="res://fonts/Cinzel-Medium.ttf" id="3_m48te"]
+[ext_resource type="FontFile" uid="uid://cr5vps1irjycr" path="res://fonts/IMFellDoublePica-Regular.ttf" id="3_yc011"]
 [ext_resource type="Texture2D" uid="uid://dewx6hs5pal3o" path="res://assets/menu.png" id="4_pjts5"]
 
 [node name="Start Menu" type="Node2D"]
@@ -22,13 +23,29 @@ anchor_bottom = 1.0
 offset_left = 64.0
 offset_top = 48.0
 offset_right = 664.0
-offset_bottom = 677.0
+offset_bottom = 696.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/default_color = Color(0.4, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("3_m48te")
-theme_override_font_sizes/normal_font_size = 121
+theme_override_font_sizes/normal_font_size = 97
 text = "The Tragedy of Macbeth"
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Press Start" type="RichTextLabel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 696.0
+offset_top = 616.0
+offset_right = 1016.0
+offset_bottom = 744.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("3_yc011")
+theme_override_font_sizes/normal_font_size = 47
+text = "Press [Space] or [Click] to Start"
 scroll_active = false
 shortcut_keys_enabled = false
 
