@@ -22,6 +22,9 @@ var game_script = PackedStringArray([
 	"Now, next question!",
 	"?2",
 	"Even though you were given so many chances to turn back; to confess your sins; to stop the bloodshed; in the end, you still chose violence.",
+	"You chose murder.",
+	"Greed",
+	"Suspicion"
 
 ])
 
