@@ -35,10 +35,14 @@ var questions = PackedStringArray([
 
 A. I will ignore these servants of the supernatural.
 B. King... you say?",
+
 "Question 2",
+
 "Question 3",
-"Question 4",
-"q5"
+
+"He shall pay sorely for this! For a moment, a thought, unwarrented, ",
+
+"Question 5"
 ])
 
 var endings = PackedStringArray([
