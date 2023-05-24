@@ -51,7 +51,7 @@ B. King... you say?",
 A. ...and loot their riches, but attack only the guards.
 B. ...and raze it to the ground, leave no survivors.",
 
-"Question 5"
+"Macduff offers you"
 ])
 
 var endings = PackedStringArray([
@@ -59,5 +59,5 @@ var endings = PackedStringArray([
 "Ending 2",
 "Ending 3",
 "Ending 4",
-"Ending 5"
+" "
 ])
