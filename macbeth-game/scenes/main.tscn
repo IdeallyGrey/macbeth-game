@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://jlx3pean3jew"]
+[gd_scene load_steps=15 format=3 uid="uid://jlx3pean3jew"]
 
 [ext_resource type="Script" path="res://gdscript/main.gd" id="1_173j8"]
 [ext_resource type="Texture2D" uid="uid://dgjgqd5y4yvl8" path="res://assets/white.png" id="1_louqr"]
@@ -13,6 +13,7 @@
 [ext_resource type="Script" path="res://gdscript/question-box.gd" id="7_pq87s"]
 [ext_resource type="Texture2D" uid="uid://ch6hunv17ag0d" path="res://assets/confirm-g.png" id="9_jhl6r"]
 [ext_resource type="Texture2D" uid="uid://b7j34heldhk73" path="res://assets/confirm-r.png" id="10_xfjm6"]
+[ext_resource type="Texture2D" uid="uid://u1mfjbe7tg1g" path="res://assets/007.jpg" id="14_nqi3e"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_173j8")
@@ -51,12 +52,14 @@ script = ExtResource("4_4io0m")
 metadata/_edit_lock_ = true
 
 [node name="Question Panel" type="Panel" parent="."]
+visible = false
 offset_left = 64.0
 offset_top = 64.0
 offset_right = 960.0
 offset_bottom = 704.0
 theme = ExtResource("6_nxfmp")
 script = ExtResource("7_jjds3")
+metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
 
 [node name="Question Box" type="RichTextLabel" parent="Question Panel"]
@@ -65,7 +68,6 @@ offset_left = 64.0
 offset_top = 64.0
 offset_right = 832.0
 offset_bottom = 320.0
-text = "Do you heed the prophesy of the witches? Or do you choose to keep these thoughts out of your mind?"
 script = ExtResource("7_pq87s")
 
 [node name="Button A" type="Button" parent="Question Panel"]
@@ -88,19 +90,28 @@ text = "B"
 icon = ExtResource("10_xfjm6")
 icon_alignment = 1
 
-[node name="Image 002" parent="." instance=ExtResource("4_y7hmb")]
+[node name="Panels" type="Node2D" parent="."]
+
+[node name="2 Lady Macbeth retrospective" parent="Panels" instance=ExtResource("4_y7hmb")]
 visible = false
 scale = Vector2(0.373, 0.373)
 texture = ExtResource("3_mri7c")
 metadata/image_id = 2
 metadata/_edit_lock_ = true
 
-[node name="Image 001" parent="." instance=ExtResource("4_y7hmb")]
+[node name="1 Macbeth and Banquo vibin" parent="Panels" instance=ExtResource("4_y7hmb")]
 visible = false
 scale = Vector2(0.448, 0.448)
 texture = ExtResource("7_f5g3e")
 metadata/image_id = 1
 metadata/_edit_lock_ = true
+
+[node name="3 The heath" parent="Panels" instance=ExtResource("4_y7hmb")]
+visible = false
+position = Vector2(512, 255.688)
+scale = Vector2(0.449975, 0.449975)
+texture = ExtResource("14_nqi3e")
+metadata/image_id = 3
 
 [connection signal="visibility_changed" from="Question Panel" to="." method="_on_question_panel_visibility_changed"]
 [connection signal="visibility_changed" from="Question Panel" to="Question Panel/Question Box" method="_on_question_panel_visibility_changed"]

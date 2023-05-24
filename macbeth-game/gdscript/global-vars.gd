@@ -9,24 +9,29 @@ var currently_typing = false
 
 # The script. Strings beginning with "!" will be skipped and instead change current image.
 var game_script = PackedStringArray([
-"Hello, the wethergregergegerwrg",
-"The quick brown fox jumped over the sleeping dog.",
-"!001",
-"Statue",
-"Still statue",
-"!002",
-"Not any more!",
-"Question time!",
-"?0",
-"Stayed on track I see",
-"Now, next question!",
-"?2",
+"You, and your close friend Banquo, are returning from the battlefield, where the two of you fought valiantly against the invading Norwegians. It has been a long week; though the battle only took the better part of a day, you've spent the last week at a soldier encampment.",
+"You can't wait to be home.",
+"!1",
+"The two of you walk in silence for a while, taking in the landscape of the country you have just fought to protect.",
+"A crow in some nearby shrubbery startles you from your revere.
+
+An odd thought strikes you: the day appears both so fowl and fair.",
+"!3",
+"After a while longer, the terrain becomes a bit rockier; the shrubs become lower, seemingly sulking to the ground, and the shrill cry of a raven harshly compliments the setting.",
+"The air cools suddenly, and a thick, palpable fog begins to roll in over the heath.",
+
+
+
+"?4",
+"You duel is short--and your will to try to fight back is shorter still.",
+"Macduff's sword pierces your gut, and your vision begins to blur.",
+"...",
 "Even though you were given so many chances to turn back; to confess your sins; to stop the bloodshed; in the end, you still chose violence.",
 "You chose evil.",
 "Greed",
 "Fear",
 "Murder",
-"Depression",
+"Selfishness",
 ""
 ])
 
@@ -40,7 +45,10 @@ B. King... you say?",
 
 "Question 3",
 
-"He shall pay sorely for this! For a moment, a thought, unwarrented, ",
+"He shall pay sorely for this! Soldiers! March on his castle…
+
+A. ...and loot their riches, but attack only the guards.
+B. ...and raze it to the ground, leave no survivors.",
 
 "Question 5"
 ])
@@ -50,6 +58,5 @@ var endings = PackedStringArray([
 "Ending 2",
 "Ending 3",
 "Ending 4",
-"Ending 5",
-""
+"Ending 5"
 ])

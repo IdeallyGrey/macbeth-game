@@ -6,3 +6,4 @@ Format: File name, name of artwork, source, license, link
 004, --, Bibliothèque municipale de Boulogne-sur-Mer, public domain, https://manuscriptminiatures.com/4437/11052
 005, WLB Cod.bibl.fol.23 Stuttgart Psalter, Württembergische Landesbibliothek, public domain, https://manuscriptminiatures.com/4868/13174
 006, UBH Cod. Pal. germ. 848 Codex Manesse, Heidelberg University Library, public domain, https://manuscriptminiatures.com/4832/7926
+007, Landscape with a Tree in the Foreground, The Met, public domain, https://www.metmuseum.org/art/collection/search/733753?where=Europe&amp;ao=on&amp;showOnly=openAccess&amp;ft=heath&amp;offset=0&amp;rpp=40&amp;pos=38
