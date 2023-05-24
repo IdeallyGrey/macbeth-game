@@ -28,11 +28,12 @@ An odd thought strikes you: the day appears both so fowl and fair.",
 "...",
 "Even though you were given so many chances to turn back; to confess your sins; to stop the bloodshed; in the end, you still chose violence.",
 "You chose evil.",
-"Greed",
-"Fear",
-"Murder",
-"Selfishness",
-""
+"Greed.",
+"Fear.",
+"Murder.",
+"Selfishness.",
+"...",
+"That, is the real tragedy."
 ])
 
 var questions = PackedStringArray([
