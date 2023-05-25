@@ -84,6 +84,7 @@ B. Plunge the dagger into his chest.",
 A. ...and loot their riches, but attack only the guards.
 B. ...and raze it to the ground, leave no survivors.",
 
+
 "\"Then yield thee, coward,\" Macduff offers you your life.
 
 A. Accept him.
