@@ -7,7 +7,7 @@ var current_question = null
 var answer = null
 var currently_typing = false
 
-# The script. Strings beginning with "!" will be skipped and instead change current image.
+# The script. Strings beginning with "!" will be skipped and instead change current image, string beginning with "?" will trigger a question. Known issue: cannot trigger image directly after question
 var game_script = PackedStringArray([
 "You, and your close friend Banquo, are returning from the battlefield, where the two of you fought valiantly against the invading Norwegians. It has been a long week; though the battle only took the better part of a day, you've spent the last week at a soldier encampment.",
 "You can't wait to be home.",
