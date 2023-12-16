@@ -9,5 +9,5 @@ All code is under the MIT license. All of the featured medieval and classical il
 - [Manuscript Miniatures](https://manuscriptminiatures.com/)
 - The Met Museum online database
 - e-codices vitrual manuscript library, by the University of Fribourg
-- Godot developers
+- Godot project
 - Mr. Miller & Ms. Best :)
